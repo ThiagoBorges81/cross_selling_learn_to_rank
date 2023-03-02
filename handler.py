@@ -4,6 +4,7 @@ import requests
 import json
 from flask           import Flask, request, Response
 from healthinsurance import HealthInsurance
+from lightgbm        import LGBMClassifier
 
 # Loading model
 model = pickle.load( open( 'models/lgbm_model.pkl','rb' ) )
