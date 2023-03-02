@@ -3,3 +3,4 @@ requests
 Flask
 sklearn
 scikit-learn
+lightgbm
