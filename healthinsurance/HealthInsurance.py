@@ -57,7 +57,7 @@ class HealthInsurance:
         df5.loc[:,'policy_sales_channel'] = df5['policy_sales_channel'].map(self.fe_policy_sales_channel_scaler )
         
         # Feature selection
-        cols_selected = ['annual_premium', 'vintage', 'age', 'region_code', 'vehicle_damage','previously_insured',                          'policy_sales_channel']
+        cols_selected = ['annual_premium', 'vintage', 'age', 'region_code', 'vehicle_damage','previously_insured', 'policy_sales_channel']
         
         return df5[ cols_selected ]
     
@@ -73,10 +73,5 @@ class HealthInsurance:
         
         # join predicted to original data
         original_data['prediction'] = pred[:, 1].tolist()
-        print('PRINT ORIGINAL DATA')
-        print(original_data)
-        
-        print( 'PRINT DO RETURN COMPLETO')
-        print(original_data.to_json( orient = 'records', date_format='iso' ))
-        
+       
         return original_data.to_json( orient = 'records', date_format='iso' )
