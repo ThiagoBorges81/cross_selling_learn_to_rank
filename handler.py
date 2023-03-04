@@ -26,6 +26,9 @@ def health_insurance_predict():
         else: # multiple examples
             test_raw = pd.DataFrame( test_json, columns=test_json[0].keys() )
             
+        print( 'Teste raw breakpoint')
+        print( test_raw )   
+            
         # Instantiate Health Insurance Class
         pipeline = HealthInsurance()
         
