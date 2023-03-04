@@ -3,9 +3,9 @@ import pickle
 import pandas as pd
 import requests
 import json
-from flask           import Flask, request, Response
-from healthinsurance import HealthInsurance
-from lightgbm        import LGBMClassifier
+from flask                           import Flask, request, Response
+from healthinsurance.HealthInsurance import HealthInsurance
+from lightgbm                        import LGBMClassifier
 
 # Loading model
 model = pickle.load( open( 'models/lgbm_model.pkl','rb' ) )
