@@ -62,8 +62,14 @@ class HealthInsurance:
         return df5[ cols_selected ]
     
     def get_prediction( self, model, original_data, test_data ):
+        print( 'Dados enviados para previsão')
+        print( test_data )
+        
         # model prediction
         pred = model.predict_proba( test_data )
+        
+        print('Predições')
+        print( pred )
         
         # join predicted to original data
         original_data['prediction'] = pred[:, 1].tolist()
