@@ -73,5 +73,10 @@ class HealthInsurance:
         
         # join predicted to original data
         original_data['prediction'] = pred[:, 1].tolist()
+        print('PRINT ORIGINAL DATA')
+        print(original_data)
+        
+        print( 'PRINT DO RETURN COMPLETO')
+        print(original_data.to_json( orient = 'records', date_format='iso' ))
         
         return original_data.to_json( orient = 'records', date_format='iso' )
