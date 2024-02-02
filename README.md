@@ -114,19 +114,33 @@ This is a learn-to-rank project [LTR.](https://en.wikipedia.org/wiki/Learning_to
   * Include a button to check the buying propensity in Google Sheets, and test the solution.
 
 # 4. Insights from the EDA  
-  The EDA is an important part of a Data Science project since it allows it to understand the data and prepare them for the rest of the project. In this project, the top 
-  3 insights where generated after checking a few hypothesis:  
+  The EDA is an important part of a Data Science project since it allows it to understand the data and prepare them for the rest of the project. In this project, the top 3 insights were generated after checking a few hypotheses:  
 
-  **H1 - The interest in the car insurance is pronounced for costumer with newer vehicles.**  
-  **FALSE:** The data show cars newer than 1 year, those that has been used between 1 and 2 years, and those cars older than two years. 
-  The hypothesis that owner with newer car would be interested in buying car insurance is false. The data show that owners of the intermediate 
-  group are the majority of interested in buying car insurance.  
+  **H1 - The interest in car insurance is pronounced for customers with newer vehicles.**  
+  **FALSE:** The data show cars newer than 1 year, those that have been used between 1 and 2 years, and those cars older than two years. 
+  The hypothesis that owners with newer cars would be interested in buying car insurance is false. The data show that owners of the intermediate 
+  the group is the majority interested in buying car insurance.  
 
+   ![fig8](images/fig8.png)  
 
 
   **H2 - Older clients are the ones interested in buying car insurance**  
-  **FALSE** - Clients with age between 40 and 55 are the ones most interested in car insurance.  
+  **FALSE** - Clients between the ages of 40 and 55 are the ones most interested in car insurance.  
+
+  ![fig2](images/fig2.png)  
 
 
   **H3 - Clients who were previously insured were the ones interested in buying car insurance**  
-  **FALSE** - Clients that have shown interest are those with no prior car insurance service.
+  **FALSE** - Clients that have shown interest are those with no prior car insurance service.  
+  ![fig](images/fig7.png)  
+
+  # 5. Machine Learning  
+
+In this project, cumulative gain and lift curves were used to assess the models tested. The **cumulative gain** curve measures how effective a model is in ranking positive instances. Here, the x-axis represents the percentage of the total samples sorted by the model's predicted probabilities whereas the y-axis represents the cumulative percentage of positive instances found by the model. For this indicator, steeper curves are better at identifying positive instances early in the ranking. The **lift curve**, compares the performance of the model against a baseline (random) model. I.e. it shows how the model is better (or worse) than the random model. The x-axis represents the percentage of the total samples sorted by the model's predicted probability while the y-axis represents the ratio of the cumulative gain of the model and the cumulative gain of the random model. Lift curve helps to understand how much the model improves the identification of positive values compared to the random model. These curves are useful in decision-making scenarios, particularly where resources are scarce.  
+
+Below, find the combined plot for the curves comparing all models.  
+
+![cum_gain](images/fig26.png)  
+
+![lift_curve](images/fig27.png)
+  
