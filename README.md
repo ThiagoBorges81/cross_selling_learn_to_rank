@@ -1,5 +1,6 @@
-# Cross Selling in the Health Insurance Business
-_Disclaimer:_ All the scenarios, descriptions, and situations in this project are fictional and do not represent any of this company’s views, actions, or opinions. The processes, results, recommendations, and any other information provided in this project have the sole intention to describe my Data Science skills using real-world approach, applications, and solutions provided. The data used in this project was retrieved from [this public source](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction). The data are available at Kaggle's website and complies with Kaggle's terms and conditions.
+# Cross Selling in the Health Insurance Business  
+![cs_img](images/cross_selling.png)
+_Disclaimer:_ All the scenarios, descriptions, and situations in this project are fictional and do not represent any of this company’s views, actions, or opinions. The processes, results, recommendations, and any other information provided in this project have the sole intention of describing my Data Science skills using real-world approaches, applications, and solutions provided. The data used in this project was retrieved from [this public source](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction). The data are available on Kaggle's website and comply with Kaggle's terms and conditions.
 
 ### The main characteristic of this project is that it rank-order potential clients using their propensity scores.
 
