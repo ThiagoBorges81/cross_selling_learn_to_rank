@@ -153,4 +153,13 @@ The power of generalization of machine learning models is the result of performa
 ![train_test_comp](images/fig29.png)  
 
 
-  
+## 5.1 Deliverable  
+
+The business team already uses the Google environment, which includes the Google Sheets tool on a daily basis. Therefore, it was planned to implement a script so that the machine learning could be run in the spreadsheet, making it easier and practical for the team to reach the clients. Please, take a look at the video below showing how the spreadsheet work:   
+
+https://github.com/ThiagoBorges81/health_insurance_deploy/assets/86489192/ca55bc27-8c14-433a-82e5-4215b6c51d09
+
+
+# 6. Conclusions  
+
+This project aimed to develop a learn-to-rank model to optimize the implementation of a new service for a company. After a series of experiments using classification algorithms, the LGBM provided the best agreement between the training and the testing data. Now, the insurance company Are you insured? has a competitive advantage to their competitors. Moreover, the tool integrated to Google Sheets has te potential to succeed twice as much, compared to a random model.
