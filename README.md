@@ -141,6 +141,11 @@ In this project, cumulative gain and lift curves were used to assess the models 
 Below, find the combined plot for the curves comparing all models.  
 
 ![cum_gain](images/fig26.png)  
+Cumulative Gain curve  
 
-![lift_curve](images/fig27.png)
+![lift_curve](images/fig27.png)  
+Lift curve  
+
+Precision and Recall were also calculated for each model in this project. Below you can find the scores of each model.  
+![pr_rec](images/fig28.png)
   
