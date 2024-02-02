@@ -147,5 +147,8 @@ Cumulative Gain curve
 Lift curve  
 
 Precision and Recall were also calculated for each model in this project. Below you can find the scores of each model.  
-![pr_rec](images/fig28.png)
+![pr_rec](images/fig28.png)  
+
+The power of generalization of machine learning models is the result of performance metrics being close for both training and test data, as long as all the proper development steps were followed during the project. Find below the performance metric for this project.  
+1[train_test_comp](images/fig29.png)
   
