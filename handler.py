@@ -7,7 +7,7 @@ from flask                           import Flask, request, Response
 from healthinsurance.HealthInsurance import HealthInsurance
 from lightgbm                        import LGBMClassifier
 
-# Loading model
+#Loading model
 model = pickle.load( open( 'models/lgbm_model.pkl','rb' ) )
 
 # Initialize API
